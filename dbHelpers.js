@@ -75,6 +75,7 @@ module.exports = {
         }
       })
       .spread((cityData) => {
+        console.log(cityData);
         return cityData;
       })
       .catch((err) => {
