@@ -1,9 +1,9 @@
 const request = require('supertest');
 // const app = require('../../server');
-// const expect = require('expect.js');
+// const expect = require('expect');
 
 
-describe('GET /api/cities/', function() {
+xdescribe('GET /api/cities/', () => {
   it('should areturn the queried City', function (done) {
     request(this.app)
       .get(`/api/cities/${'Chicago, IL'}`)

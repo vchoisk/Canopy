@@ -1,6 +1,6 @@
 export default function typeToAppView(type) {
   return {
-    type: 'VEIW_APPLICATION',
+    type: 'VIEW_APPLICATION',
     payload: type
   };
 }
