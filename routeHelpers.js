@@ -40,7 +40,7 @@ module.exports = {
   getCity: (req, res) => {
     dbHelpers.getCity(req.params.city)
     .then((city) => {
-      res.json(city);
+      res.status(200).json(city);
     })
     .catch((err) => {
       res.status(400).send(err);
