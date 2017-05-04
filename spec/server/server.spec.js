@@ -1,12 +1,14 @@
 const request = require('supertest');
-// const expect = require('expect.js');
+// const app = require('../../server');
+// const expect = require('expect');
 
-describe('/test', function() {
-  it('should echo the request', function (done) {
+
+xdescribe('GET /api/cities/', () => {
+  it('should areturn the queried City', function (done) {
     request(this.app)
-      .get('/test')
+      .get(`/api/cities/${'Chicago, IL'}`)
       .then((res) => {
-        expect(res.text).toEqual('hello');
+        expect(res).toEqual({});
         done();
       })
       .catch(done.fail);
